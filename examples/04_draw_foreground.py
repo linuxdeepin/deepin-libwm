@@ -43,7 +43,7 @@ conn.core.CreateWindow(
     10,                         # window y
     screen_width / 2,           # window width
     screen_height / 2,          # window height
-    0,                          # border width
+    30,                          # border width
     xproto.WindowClass.InputOutput, # window class
     screen.root_visual,             # window visual
     xproto.CW.BackPixel | xproto.CW.EventMask, # event mask
