@@ -14,10 +14,13 @@ cd libxcb
 make
 sudo make install
 
+* Remove python-xpyb (for import code from compile version of xpyb)
+sudo apt-get purge python-xpyb
+
 * Install xpyb
 git clone git://anongit.freedesktop.org/xcb/xpyb
 cd xpyb && ./autogen.sh
-./configure
+./configure --enable-xinput
 sudo make install
 
 * Install cairo
